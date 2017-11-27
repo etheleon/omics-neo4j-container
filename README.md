@@ -20,17 +20,12 @@ Download the DBs using the links provided below expires in 1 year in Dec 2018. P
 ### Simulation
 
 1. Initial analysis with Single Copy Gene KOs only
-    * Contigs compared with trimmed NR db [contigs_against_trimmednr](https://thesis-neo4j-db.s3.amazonaws.com/sim/contigs_against_trimmednr.tar.gz.gpg?AWSAccessKeyId=AKIAJ5SH5HHDXK4UI5GA&Signature=xG6YgNR7upoABqdVB2rM4pIiGsQ%3D&Expires=1511766540)
-    * Contigs compared with NR db [full NR](https://thesis-neo4j-db.s3.amazonaws.com/sim/contigs_against_fullnr.tar.gz.gpg?AWSAccessKeyId=AKIAJ5SH5HHDXK4UI5GA&Signature=4yTreye%2BZmGkq4bDE%2BvEHYvkYIk%3D&Expires=1511766540)
-
-```
-LINK="https://s3-ap-southeast-1.amazonaws.com/thesis-neo4j-db/sim/allKOS_fullnr.tar.gz.gpg" contigs_against_trimmednr.tar.gz.gpg"
-curl -O -L $LINK
-```
+    * Contigs compared with trimmed NR db [contigs_against_trimmednr](https://s3-ap-southeast-1.amazonaws.com/thesis-neo4j-db/sim/contigs_against_trimmednr.tar.gz.gpg)
+    * Contigs compared with NR db [full NR](https://s3-ap-southeast-1.amazonaws.com/thesis-neo4j-db/sim/contigs_against_fullnr.tar.gz.gpg)
 
 2. With all KOs
-    * Contigs compared with trimmed NR db [trimmed NR](https://thesis-neo4j-db.s3.amazonaws.com/sim/allKOS_trimmednr.tar.gz.gpg?AWSAccessKeyId=AKIAJ5SH5HHDXK4UI5GA&Signature=Y8sdO7mQWT1g%2Fcw%2FeiM18Q9LiiE%3D&Expires=1511766540)
-    * Contigs compared with NR db [full NR](https://thesis-neo4j-db.s3.amazonaws.com/sim/allKOS_fullnr.tar.gz.gpg?AWSAccessKeyId=AKIAJ5SH5HHDXK4UI5GA&Signature=a%2BBv0J8wFLye%2BowHRRiZCFBzJgg%3D&Expires=1511766540)
+    * Contigs compared with trimmed NR db [trimmed NR](https://s3-ap-southeast-1.amazonaws.com/thesis-neo4j-db/sim/allKOS_trimmednr.tar.gz.gpg)
+    * Contigs compared with NR db [full NR](https://s3-ap-southeast-1.amazonaws.com/thesis-neo4j-db/sim/allKOS_fullnr.tar.gz.gpg)
 
 ### Ulu Pandan
 
@@ -45,9 +40,10 @@ curl -O -L $LINK
 Once you've downloaded the file rename it to <name>.tar.gz.gpg
 
 ```
-DB=<DBname>
-#DB=allKOS_fullnr
+DB=allKOS_fullnr
+#decrypt
 gpg --yes --batch --passphrase=[Enter your passphrase here] $DB.tar.gz.gpg
+#gunzip and untar
 tar -zvxf $DB.tar.gz
 ```
 
@@ -60,6 +56,4 @@ docker run \
     --volume=$data:/data \
     etheleon/docker-neo4j-publish:latest
 ```
-
-
 
