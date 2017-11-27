@@ -37,8 +37,6 @@ Download the DBs using the links provided below expires in 1 year in Dec 2018. P
 
 ### Time-series
 
-Once you've downloaded the file rename it to <name>.tar.gz.gpg
-
 ```
 DB=allKOS_fullnr
 #decrypt
