@@ -14,7 +14,9 @@ docker pull etheleon/omics-neo4j-container
 ```
 
 ## Download DB
-Download the DBs using the links provided below expires in 1 year in Dec 2018. Please approach me for the passphrase to decrypt the gz files.
+Download the DBs using the links provided below expires in 1 year in Dec 2018. 
+
+Please approach me for the passphrase to decrypt the gz files.
 
 ### Simulation
 
