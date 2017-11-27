@@ -55,9 +55,10 @@ tar -zvxf $DB.tar.gz
 #Run the Docker container
 data=$PWD/$DB
 docker run \
-    --name omics
+    --rm \
+    --name omics \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$data:/data \
-    etheleon/docker-neo4j-publish:latest
+    --ulimit=nofile=40000:40000 \
+    etheleon/omics-neo4j-container:latest
 ```
-
