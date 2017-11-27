@@ -13,8 +13,7 @@ After installing Docker, pull the image:
 docker pull etheleon/omics-neo4j-container
 ```
 
-## Download DB, Decrypt, Decompress run Docker
-
+## Download DB
 Download the DBs using the links provided below expires in 1 year in Dec 2018. Please approach me for the passphrase to decrypt the gz files.
 
 ### Simulation
@@ -37,6 +36,9 @@ Download the DBs using the links provided below expires in 1 year in Dec 2018. P
 
 ### Time-series
 
+## Decrypt, Decompress
+
+
 ```
 DB=allKOS_fullnr
 #decrypt
@@ -44,6 +46,8 @@ gpg --yes --batch --passphrase=[Enter your passphrase here] $DB.tar.gz.gpg
 #gunzip and untar
 tar -zvxf $DB.tar.gz
 ```
+
+##  Run Docker
 
 ```
 #Run the Docker container
