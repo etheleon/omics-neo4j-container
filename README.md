@@ -1,7 +1,7 @@
 # Omics neo4j docker image
 
 This repository provides the necessary Dockerfile to set up the container environment (neo4j v2.2.3) to load
-graph database built with [omics](github.com/etheleon/omics) for my PhD dissertation.
+graph database built with [omics](github.com/etheleon/omics) mentioned in PhD dissertation.
 
 You'll need to have [Docker](https://docs.docker.com/engine/installation/) installed.
 
