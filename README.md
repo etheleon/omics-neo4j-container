@@ -1,6 +1,6 @@
 # Omics neo4j docker image
 
-This [repository](https://github.com/etheleon/omics-neo4j-container/) provides the instructions for seting up the container cenvrionemtn to run the [omics](github.com/etheleon/omics) database (NEO4J).
+This [repository](https://github.com/etheleon/omics-neo4j-container/) provides the instructions for seting up the container environment to run the [omics](github.com/etheleon/omics) database (NEO4J).
 
 Please install [Docker](https://docs.docker.com/engine/installation/) beforehand.
 
